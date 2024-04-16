@@ -10,7 +10,7 @@ function Login() {
     const handleClick = () =>{
         signInWithPopup(auth, provider).then((res)=>{
             console.log(res,"userData")
-            navigate('./home')
+            navigate('/home')
         }).catch((err)=>{
             console.log(err,"error")
         })
